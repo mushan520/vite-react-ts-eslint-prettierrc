@@ -45,7 +45,9 @@ If you are developing a production application, we recommend updating the config
 ```bash
 npm init @eslint/config
 
-按需选择完配置后，选择立即安装，就可一键安装相关依赖。安装成功后 ESLint 帮我们创建了 .eslintrc.cjs 配置文件（cjs 是指 CommonJS 格式）。
+按需选择完配置后，选择立即安装，就可一键安装相关依赖。
+安装成功后 ESLint 帮我们创建了 .eslintrc.cjs 配置文件（cjs 是指 CommonJS 格式）。
+
 ```js
    module.exports = {
     "env": {
@@ -73,6 +75,7 @@ npm init @eslint/config
     }
 }
 ```
+
 可以看到生成的配置文件继承了 "eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"，我们如果需要配置自己的 lint 规则可以在 rules 中添加。
 
 ## Prettier
@@ -275,6 +278,4 @@ npx husky add .husky/commit-msg "npx --no-install commitlint -e $HUSKY_GIT_PARAM
 现在提交信息不合法就会被拦截导致提交失败，规范可见 commitlint ，你也可以根据需要修改提交信息规范。
 
 现在我们已经配置好了一个 Vite+React+TS+ESLint+Prettier+Husky+Commitlint 项目，可以开始愉快地开发了。
-```
-
 
