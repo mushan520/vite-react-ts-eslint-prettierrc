@@ -277,3 +277,10 @@ npx husky add .husky/commit-msg "npx --no-install commitlint -e $HUSKY_GIT_PARAM
 
 现在我们已经配置好了一个 Vite+React+TS+ESLint+Prettier+Husky+Commitlint 项目，可以开始愉快地开发了。
 
+
+# 说明
+## 安装prettierrc插件，可以用shift + alt + f 进行格式化
+## 在settings.json中配置	"editor.formatOnSave": true,   可以保存的时候自动格式化
+## 由于公司项目中额外使用一套format，与prettierrc冲突，因此没有配置
+
+
