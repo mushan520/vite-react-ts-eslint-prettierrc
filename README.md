@@ -48,7 +48,6 @@ npm init @eslint/config
 按需选择完配置后，选择立即安装，就可一键安装相关依赖。
 安装成功后 ESLint 帮我们创建了 .eslintrc.cjs 配置文件（cjs 是指 CommonJS 格式）。
 
-```js
    module.exports = {
     "env": {
         "browser": true,
@@ -103,7 +102,6 @@ ESLint + Prettier
 
 yarn add eslint-config-prettier eslint-plugin-prettier -D
 现在更改 ESLint 的配置文件 .eslintrc.cjs 在里面加入 Prettier 相关配置。具体含义可见 github.com/prettier/eslint-config-prettier。
-```js
 module.exports = {
     "env": {
         "browser": true,
